@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* Design tokens from design/portfolio.pen (Pencil). */
+@theme {
+  --color-surface: #ffffff;
+  --color-surface-muted: #f3f4f6;
+  --color-surface-inverse: #0b0b0c;
+  --color-surface-code: #151619;
+  --color-fg: #0b0b0c;
+  --color-fg-secondary: #5f6368;
+  --color-fg-muted: #9aa0a6;
+  --color-fg-inverse: #ffffff;
+  --color-fg-inverse-secondary: #b8bcc2;
+  --color-fg-inverse-muted: #7a7f86;
+  --color-accent: #f25c05;
+  --color-accent-hover: #d94f00;
+  --color-border: #e4e6ea;
+  --color-border-strong: #d9dce1;
+  --color-border-inverse: #26282c;
+  --color-success: #5dd39e;
+  --color-danger: #d93025;
+
+  --font-heading: 'Geologica', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Golos Text', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --radius-ds: 6px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface font-body text-fg antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+}
+
+/* Small mono caption used across the page ("01 / ОПЫТ", stacks, dates). */
+@utility caption {
+  @apply font-mono text-xs tracking-[0.03em] uppercase;
+}
