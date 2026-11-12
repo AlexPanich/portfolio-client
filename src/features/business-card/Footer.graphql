@@ -1,0 +1,4 @@
+fragment Footer_profile on Profile {
+  id
+  name
+}

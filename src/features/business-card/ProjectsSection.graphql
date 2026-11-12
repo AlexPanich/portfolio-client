@@ -1,0 +1,19 @@
+fragment ProjectsSection_profile on Profile {
+  id
+  projects {
+    id
+    ...ProjectItem_project
+  }
+}
+
+fragment ProjectItem_project on Project {
+  id
+  name
+  description
+  url
+  repositoryUrl
+  technologies {
+    id
+    name
+  }
+}

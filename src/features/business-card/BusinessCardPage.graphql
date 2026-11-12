@@ -1,0 +1,11 @@
+query BusinessCard {
+  profile {
+    id
+    ...Nav_profile
+    ...Hero_profile
+    ...ExperienceSection_profile
+    ...ProjectsSection_profile
+    ...SkillsSection_profile
+    ...Footer_profile
+  }
+}

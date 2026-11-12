@@ -1,0 +1,29 @@
+fragment Hero_profile on Profile {
+  id
+  name
+  headline
+  description
+  location
+  avatar {
+    url
+  }
+  totalExperience {
+    years
+    months
+  }
+  links {
+    id
+    type
+    label
+    url
+  }
+  experience {
+    id
+  }
+  projects {
+    id
+  }
+  skills {
+    id
+  }
+}

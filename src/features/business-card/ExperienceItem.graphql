@@ -1,0 +1,21 @@
+fragment ExperienceItem_experience on Experience {
+  id
+  company
+  companyUrl
+  position
+  location
+  description
+  achievements
+  period {
+    startDate
+    endDate
+    duration {
+      years
+      months
+    }
+  }
+  technologies {
+    id
+    name
+  }
+}

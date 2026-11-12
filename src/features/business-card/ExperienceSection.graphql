@@ -1,0 +1,11 @@
+fragment ExperienceSection_profile on Profile {
+  id
+  totalExperience {
+    years
+    months
+  }
+  experience {
+    id
+    ...ExperienceItem_experience
+  }
+}

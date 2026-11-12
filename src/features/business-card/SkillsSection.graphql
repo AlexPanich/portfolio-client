@@ -1,0 +1,8 @@
+fragment SkillsSection_profile on Profile {
+  id
+  skills {
+    id
+    name
+    category
+  }
+}

@@ -1,0 +1,8 @@
+fragment Nav_profile on Profile {
+  id
+  links {
+    id
+    type
+    url
+  }
+}
