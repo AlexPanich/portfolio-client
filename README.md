@@ -2,6 +2,13 @@
 
 Одностраничный клиент на **React + Apollo Client** для [portfolio-api](https://github.com/AlexPanich/portfolio-api) (NestJS · GraphQL · Prisma · PostgreSQL · S3). Дизайн сделан в [Pencil](https://pen.dev), исходник — [`design/portfolio.pen`](./design).
 
+| | |
+|---|---|
+| Демо | **https://portfolio-client-m3oz.onrender.com** |
+| API (Apollo Sandbox) | https://portfolio-api-z17b.onrender.com/graphql |
+
+На демо S3 не подключён, поэтому вместо фото показывается монограмма. Первый запрос после простоя может идти до минуты: API на бесплатном тарифе просыпается, и клиент об этом сообщает.
+
 **Стек:** React 19 · Apollo Client 4 · GraphQL Code Generator · TypeScript · Vite 8 · Tailwind CSS 4 · Vitest + Testing Library
 
 ## Запуск

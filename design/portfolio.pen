@@ -2507,10 +2507,10 @@
       "id": "X8qyR7",
       "x": -1560,
       "y": 0,
-      "name": "Live — localhost:5173",
+      "name": "Live — production",
       "width": 1440,
       "height": 1000,
-      "url": "localhost:5173"
+      "url": "portfolio-client-m3oz.onrender.com"
     },
     {
       "type": "browser",
